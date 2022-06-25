@@ -1,4 +1,0 @@
-- name: Generate ED25519 ssh key
-  command: ssh-keygen -t ed25519 -a 100 -N ""
-  args:
-    creates: ~/.ssh/id_ed25519

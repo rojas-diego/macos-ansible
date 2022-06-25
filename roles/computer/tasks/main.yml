@@ -1,9 +1,18 @@
-# Configures the installation of homebrew packages.
+- name: Link dotfiles
+  copy:
+    src: "{{ role_path }}/files/{{ item }}"
+    dest: "~/{{ item }}"
+  loop:
+  - .gitconfig
+  - .zshrc
+  - .zprofile
+
 - name: Install homebrew packages
   homebrew: name={{ item }} state=present
   with_items:
     # Utilities
     - tree
+    - gnupg
     # Programming languages
     - rust
     - go
@@ -21,3 +30,8 @@
     - discord
     - notion
     - slack
+
+- name: Generate ED25519 ssh key
+  command: ssh-keygen -t ed25519 -a 100 -N "" -C "rojasdiegopro@gmail.com" -f ~/.ssh/id_ed25519
+  args:
+    creates: ~/.ssh/id_ed25519
