@@ -2,6 +2,7 @@
   copy:
     src: "{{ role_path }}/files/{{ item }}"
     dest: "~/{{ item }}"
+    force: false
   loop:
   - .gitconfig
   - .zshrc
@@ -13,6 +14,8 @@
     # Utilities
     - tree
     - gnupg
+    - bufbuild/buf/buf
+    - protobuf
     # Programming languages
     - rust
     - go
@@ -20,6 +23,7 @@
     - nvm
     # Tooling
     - minikube
+    - nvim
 
 - name: Install homebrew cask packages 
   homebrew_cask: name={{ item }} state=present
