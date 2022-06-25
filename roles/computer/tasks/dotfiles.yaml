@@ -1,0 +1,8 @@
+# Configures files under ~/
+- name: Link dotfiles
+  copy:
+    src: "{{ role_path }}/files/{{ item }}"
+    dest: ~/.zshrc
+  loop:
+  - .gitconfig
+  - .zshrc
