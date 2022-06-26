@@ -9,3 +9,6 @@ plugins=(git)
 
 # Installation folder.
 source $ZSH/oh-my-zsh.sh
+
+# Add GOPATH to PATH.
+export PATH="$PATH:$HOME/go/bin"
