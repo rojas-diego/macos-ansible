@@ -4,9 +4,9 @@
     dest: "~/{{ item }}"
     force: false
   loop:
-  - .gitconfig
-  - .zshrc
-  - .zprofile
+    - .gitconfig
+    - .zshrc
+    - .zprofile
 
 - name: Install homebrew packages
   homebrew: name={{ item }} state=present
@@ -34,6 +34,23 @@
     - discord
     - notion
     - slack
+
+- name: Install pip packages
+  pip:
+    name: "{{ item }}"
+  loop:
+    - neovim
+
+
+- name: Create the neovim config directory
+  command: mkdir -p ~/config ~/.config/nvim
+  args:
+    creates: ~/.config/nvim
+
+- name: Configure neovim
+  copy:
+    src: "{{ role_path }}/files/init.vim"
+    dest: ~/.config/nvim/init.vim
 
 - name: Generate ED25519 ssh key
   command: ssh-keygen -t ed25519 -a 100 -N "" -C "rojasdiegopro@gmail.com" -f ~/.ssh/id_ed25519
