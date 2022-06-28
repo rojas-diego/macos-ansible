@@ -16,6 +16,7 @@
     - gnupg
     - bufbuild/buf/buf
     - protobuf
+    - gh
     # Programming languages
     - rust
     - go
