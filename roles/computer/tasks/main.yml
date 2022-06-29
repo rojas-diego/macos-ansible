@@ -35,13 +35,14 @@
     - discord
     - notion
     - slack
+    - microsoft-teams
+    - zoom
 
 - name: Install pip packages
   pip:
     name: "{{ item }}"
   loop:
     - neovim
-
 
 - name: Create the neovim config directory
   command: mkdir -p ~/config ~/.config/nvim
