@@ -17,6 +17,7 @@
     - bufbuild/buf/buf
     - protobuf
     - gh
+    - httpie
     # Programming languages
     - rust
     - go
@@ -37,6 +38,7 @@
     - slack
     - microsoft-teams
     - zoom
+    - google-chrome
 
 - name: Install pip packages
   pip:
