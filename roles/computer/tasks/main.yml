@@ -61,3 +61,6 @@
   command: ssh-keygen -t ed25519 -a 100 -N "" -C "rojasdiegopro@gmail.com" -f ~/.ssh/id_ed25519
   args:
     creates: ~/.ssh/id_ed25519
+
+- name: Configure Github CLI
+  command: gh config set editor "code --wait"
