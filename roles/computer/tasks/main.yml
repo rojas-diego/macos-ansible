@@ -27,6 +27,8 @@
     - minikube
     - nvim
     - helm
+    - terraform
+    - subversion
 
 - name: Install homebrew cask packages
   homebrew_cask: name={{ item }} state=present
