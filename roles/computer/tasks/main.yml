@@ -18,6 +18,11 @@
     - protobuf
     - gh
     - httpie
+    - nvim
+    - helm
+    - terraform
+    - subversion
+    - koyeb/tap/koyeb
     # Programming languages
     - rust
     - go
@@ -25,10 +30,6 @@
     - nvm
     # Tooling
     - minikube
-    - nvim
-    - helm
-    - terraform
-    - subversion
 
 - name: Install homebrew cask packages
   homebrew_cask: name={{ item }} state=present
