@@ -23,6 +23,7 @@
     - terraform
     - subversion
     - koyeb/tap/koyeb
+    - wget
     # Programming languages
     - rust
     - go
@@ -68,3 +69,6 @@
 
 - name: Configure Github CLI
   command: gh config set editor "code --wait"
+
+- name: Install mambaforge
+  ansible.builtin.script: ./roles/computer/files/install-mambaforge.sh

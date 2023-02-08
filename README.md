@@ -16,3 +16,4 @@ python3 -m pip install --user ansible
 - Configure VSCode to use settings-sync
 - Initialise the Google Cloud CLI
 - Initialise the AWS CLI
+- Initialise the Koyeb CLI
