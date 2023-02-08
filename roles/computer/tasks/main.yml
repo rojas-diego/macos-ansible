@@ -43,6 +43,7 @@
     - microsoft-teams
     - zoom
     - google-chrome
+    - voov-meeting
 
 - name: Install pip packages
   pip:
