@@ -5,7 +5,7 @@ Upon cloning this repository, on a MacOS Ventura computer that was just reset to
 git # prompts to install xcode tools.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 python3 -m pip install --user ansible
-/Users/diego/Library/Python/3.9/bin/ansible-playbook -i inventory playbook.yaml
+/Users/$USER/Library/Python/3.9/bin/ansible-playbook -i inventory playbook.yaml
 ```
 
 ## Checklist
