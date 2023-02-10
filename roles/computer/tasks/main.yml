@@ -45,6 +45,7 @@
     - zoom
     - google-chrome
     - voov-meeting
+    - wechat
 
 - name: Install pip packages
   pip:
