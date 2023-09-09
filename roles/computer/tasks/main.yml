@@ -24,10 +24,11 @@
     - subversion
     - koyeb/tap/koyeb
     - wget
+    - awscli 
     # Programming languages
+    - python3
     - rust
     - go
-    - python3
     - nvm
     # Tooling
     - minikube
@@ -41,12 +42,8 @@
     - discord
     - notion
     - slack
-    - microsoft-teams
-    - zoom
-    - google-chrome
     - voov-meeting
     - wechat
-    - figma
     - google-cloud-sdk
 
 - name: Install pip packages

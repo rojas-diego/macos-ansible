@@ -1,8 +1,6 @@
 [user]
 	name = Diego ROJAS
 	email = rojasdiegopro@gmail.com
-[commit]
-	gpgsign = true
 [pull]
 	rebase = true
 [init]
