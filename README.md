@@ -11,8 +11,7 @@ python3 -m pip install --user ansible
 
 ## Checklist
 
-- Log into Github and add your ssh key
-- Create a GPG key and add it to github
+- Add new SSH key to your [Github Account](https://github.com/settings/keys)
 - Install SF Mono fonts
 - Configure VSCode to use settings-sync
 - Initialise the Google Cloud CLI
