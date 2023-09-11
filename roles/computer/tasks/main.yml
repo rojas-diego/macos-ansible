@@ -30,9 +30,10 @@
     - rust
     - go
     - nvm
-    - ruff
     # Tooling
     - minikube
+    - ruff
+    - pylyzer
 
 - name: Install homebrew cask packages
   homebrew_cask: name={{ item }} state=present
