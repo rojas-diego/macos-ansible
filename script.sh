@@ -6,6 +6,9 @@ cd ~
 git clone https://github.com/rojas-diego/macos-ansible
 cd macos-ansible
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Create new SSH key
 EMAIL=''
 ssh-keygen -t ed25519 -C $EMAIL
@@ -36,4 +39,12 @@ brew install --cask docker \
     spotify \
     discord \
     slack \
-    wechat
+    wechat \
+    visual-studio-code
+
+# Install VSCode extensions
+code --install-extension ms-vscode.atom-keybindings
+
+# Install VSCode settings
+
+# Install VSCode keybindings

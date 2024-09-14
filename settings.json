@@ -1,0 +1,11 @@
+{
+    // Theme
+    "workbench.colorTheme": "GitHub Dark Default",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "GitHub Dark Default",
+    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    // Font (SF Mono)
+    "editor.fontFamily": "SF Mono",
+    "editor.fontSize": 14
+    // Editor"
+}
